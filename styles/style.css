@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+   font-size: 62.5%;
+   --blue: #312D64;
+   --pink: #B52184;
+   --background: #F9F4FB;
+   --white: #FFFFFF;
+   --gradient1: #343193;
+   --gradient2: #302C63;
+}
+
+body {
+   width: 43rem;
+   margin: auto;
+   background-color: var(--background);
+   font-family: 'Mulish', sans-serif;
+   font-size: 2rem;
+   font-weight: 600;
+   color: var(--blue);
+   text-align: center;
+}
+
+#project h1 {
+   color: var(--pink);
+   font-weight: 900;
+}
+
+.header {
+   padding-bottom: 9.3rem;
+}
+
+.header .main-img {
+   margin-bottom: 1.7rem;
+}
+
+.header h1 {
+   margin-bottom: 5px;
+   font-size: 3.2rem;
+}
+
+.header p {
+   margin-bottom: 3.5rem;
+}
+
+.topics {
+   background: linear-gradient(96deg, var(--gradient1) 0%, var(--gradient2) 99.68%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5rem;
+   padding: 5.3rem 0;
+}
+
+.topics div {
+   background-color: var(--white);
+   width: 35.2rem;
+   border-radius: 2rem;
+   text-align: left;
+   padding: 2.7rem;
+   box-shadow: 0px 3px 13px 0px #00000040;
+}
+
+.topics div h1 {
+   font-size: 3rem;
+   margin-bottom: 1.3rem;
+   margin-top: 2.5rem;
+}
+
+.topics div p {
+   font-size: 1.6rem;
+   width: 26.5rem;
+}
+
+.login {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.login h1 {
+   font-size: 3.2rem;
+   margin: 7.8rem 0 4.3rem 4rem;
+}
+
+.login #contact {
+   display: flex;
+   flex-direction: column;
+   gap: 2.4rem;
+}
+
+.login #contact div {
+   margin-left: 4.3rem;
+}
+
+.login #contact input {
+   font-size: 1.6rem;
+   font-family: 'Mulish', sans-serif;
+   font-weight: 600;
+   color: var(--blue);
+   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+   width: 35rem;
+   border-radius: 1.6rem;
+   border: 2px solid var(--blue);
+}
+
+.login #contact input::placeholder {
+   color: var(--blue);
+}
+
+footer {
+   background: linear-gradient(96deg, var(--gradient1) 0%, var(--gradient2) 99.68%);
+
+   padding: 1.6rem;
+   text-align: center;
+   color: var(--white);
+   font-size: 1.9rem;
+}
