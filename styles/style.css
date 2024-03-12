@@ -107,13 +107,22 @@ body {
    font-weight: 600;
    color: var(--blue);
    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
-   width: 35rem;
-   border-radius: 1.6rem;
-   border: 2px solid var(--blue);
+   border: none;
+   background-color: var(--background);
+   outline: none;
+   flex: 1;
 }
 
 .login #contact input::placeholder {
    color: var(--blue);
+}
+
+#contact .personal-data {
+   display: flex;
+   border-radius: 1.6rem;
+   border: 2px solid var(--blue);
+   padding-left: 1.4rem;
+   overflow: hidden;
 }
 
 footer {
