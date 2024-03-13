@@ -18,14 +18,17 @@
    --gradient2: #302C63;
 }
 
+body, input, textarea, button {
+   font-family: 'Mulish', sans-serif;
+   font-weight: 600;
+   color: var(--blue);
+}
+
 body {
    width: 43rem;
    margin: auto;
    background-color: var(--background);
-   font-family: 'Mulish', sans-serif;
    font-size: 2rem;
-   font-weight: 600;
-   color: var(--blue);
    text-align: center;
 }
 
@@ -38,7 +41,7 @@ body {
    padding-bottom: 9.3rem;
 }
 
-.header .main-img {
+.main-img {
    margin-bottom: 1.7rem;
 }
 
@@ -49,6 +52,11 @@ body {
 
 .header p {
    margin-bottom: 3.5rem;
+}
+
+.arrow {
+   --startY: 50%;
+   animation: move 0.6s alternate infinite;
 }
 
 .topics {
@@ -67,6 +75,8 @@ body {
    text-align: left;
    padding: 2.7rem;
    box-shadow: 0px 3px 13px 0px #00000040;
+   --delay: 0.4s;
+   animation: appear 1s var(--delay) backwards;
 }
 
 .topics div h1 {
@@ -98,22 +108,22 @@ body {
 }
 
 .login #contact div {
-   margin-left: 4.3rem;
+   margin: 0 4.3rem 0 3.9rem;
 }
 
-.login #contact input {
+input, textarea {
    font-size: 1.6rem;
-   font-family: 'Mulish', sans-serif;
-   font-weight: 600;
-   color: var(--blue);
-   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
    border: none;
    background-color: var(--background);
    outline: none;
+}
+
+.login #contact input {
+   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
    flex: 1;
 }
 
-.login #contact input::placeholder {
+#contact input::placeholder,#contact textarea::placeholder {
    color: var(--blue);
 }
 
@@ -125,6 +135,31 @@ body {
    overflow: hidden;
 }
 
+#contact textarea {
+   width: 100%;
+   height: 12.6rem;
+   padding: 1.2rem 1.6rem 1.6rem;
+   border: 2px solid var(--blue);
+   border-radius: 1.6rem;
+}
+
+#contact .button {
+   font-size: 1.4rem;
+   font-weight: 700;
+   width: 15.2rem;
+   padding: 1.6rem;
+   background: linear-gradient(96deg, var(--gradient1) 0%, var(--gradient2) 99.68%);
+   color: var(--white);
+   border: none;
+   border-radius: 1.6rem;
+   margin: 0 0 6.5rem 4.3rem;
+   cursor: pointer;
+}
+
+#contact .button:hover {
+   background: linear-gradient(96deg, #B52184 0%, #8c1a66 99.68%); 
+}
+
 footer {
    background: linear-gradient(96deg, var(--gradient1) 0%, var(--gradient2) 99.68%);
 
@@ -132,4 +167,57 @@ footer {
    text-align: center;
    color: var(--white);
    font-size: 1.9rem;
+}
+
+@keyframes appear {
+   0% {
+      opacity: 0;
+      transform: scale(0.7);
+   }
+}
+
+@keyframes move {
+   0% {
+      transform: translateY(var(--startY));
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+   body {
+      width: 100%;
+      font-size: 2.5rem;
+   }
+
+   #project h1 {
+      font-size: 4rem;
+   }
+
+   .topics {
+      gap: 8rem;
+      padding: 10rem 0;
+   }
+
+   .topics div {
+      width: 55rem;
+      padding: 4rem;
+   }
+
+   .topics div p {
+      font-size: 2.5rem;
+      width: 40rem;
+   }
+
+   input, textarea {
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   #contact .button {
+      font-size: 1.8rem;
+      width: 20rem;
+   }
+}
+
+@media (min-width: 1024px) {
+   
 }
