@@ -219,7 +219,7 @@ footer {
    .topics div:hover {
       transform: scale(1.1);
       transition: 0.5s;
-      background-color: var(--pink);
+      background: linear-gradient(96deg, #B52184 0%, #8c1a66 99.68%); 
       color: var(--white);
    }
 
