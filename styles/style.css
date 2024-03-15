@@ -25,7 +25,7 @@ body, input, textarea, button {
 }
 
 body {
-   width: 43rem;
+   width: 100%;
    margin: auto;
    background-color: var(--background);
    font-size: 2rem;
@@ -250,7 +250,7 @@ footer {
    .header .title {
       grid-area: title;
       text-align: left;
-      margin: 31.2rem 2.8rem 12rem 10.9rem; 
+      margin: 25rem 2.8rem 0rem 10.9rem; 
    }
 
    .title h1 {
@@ -314,7 +314,7 @@ footer {
    }
 
    .login {
-      width: 79.3rem;
+      width: 100%;
       padding: 0 9.2rem 0 10.9rem;
    }
 
