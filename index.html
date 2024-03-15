@@ -9,11 +9,12 @@
 <body>
    <main id="project">
       <div class="header">
-         <img src="assets/image-cell.png" alt="desenho de astronauta com planetas" class="main-img">
+         <img src="assets/main-img.svg" alt="desenho de astronauta com planetas" class="main-img">
          
-         <h1>Explore sem limites</h1>
-
-         <p>Porque o aprendizado é contínuo</p>
+         <div class="title">
+            <h1>Explore sem limites</h1>
+            <p>Porque o aprendizado é contínuo</p>
+         </div>
 
          <img src="assets/seta.svg" alt="seta indicação de rolagem para baixo" class="arrow">
       </div>
@@ -22,7 +23,7 @@
          <div>
             <img src="assets/planet-1.png" alt="desenho de planeta de cor laranja">
 
-            <h1>Não pare nunca</h1>
+            <h2>Não pare nunca</h2>
 
             <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
          </div>
@@ -30,7 +31,7 @@
          <div style="--delay: 0.8s">
             <img src="assets/planet-2.png" alt="desenho de planeta de cor azul">
 
-            <h1>Só volta</h1>
+            <h2>Só volta</h2>
 
             <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
          </div>
@@ -38,38 +39,36 @@
          <div style="--delay: 1.2s">
             <img src="assets/planet-3.png" alt="desenho de planeta de cor rosa">
 
-            <h1>Siga seu ritmo</h1>
+            <h2>Siga seu ritmo</h2>
 
             <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
          </div>
       </div>
 
-      <div class="login">
-         <h1>Entre em contato</h1>
-
-         <form id="contact" method="post">
-            <div class="personal-data">
-               <label for="iname"></label>
-               <img src="assets/person.svg" alt="ícone de pessoa">
-               <input type="text" id="iname" placeholder="Seu nome" required>
-            </div>
-
-            <div class="personal-data">
-               <label for="iemail"></label>
-               <img src="assets/at.svg" alt="ícone do arroba">
-               <input type="email" id="iemail" placeholder="Email" required>
-            </div>
-
-            <div class="box-message">
-               <label for="message"></label>
-               <textarea id="message" placeholder="Digite sua mensagem aqui..."></textarea>
-            </div>
-            
-            <button class="button" form="contact">
-               Enviar mensagem
-            </button>
-         </form>
+      <div class="login-area">
+         <div class="login">
+            <h1>Entre em contato</h1>
+            <form id="contact" method="post">
+               <div class="personal-data">
+                  <label for="iname"></label>
+                  <img src="assets/person.svg" alt="ícone de pessoa">
+                  <input type="text" id="iname" placeholder="Seu nome" required>
+               </div>
+               <div class="personal-data">
+                  <label for="iemail"></label>
+                  <img src="assets/at.svg" alt="ícone do arroba">
+                  <input type="email" id="iemail" placeholder="Email" required>
+               </div>
+               <div>
+                  <label for="message"></label>
+                  <textarea id="message" placeholder="Digite sua mensagem aqui..." style="resize: none"></textarea>
+               </div>
          
+               <button class="button" form="contact">
+                  Enviar mensagem
+               </button>
+            </form>
+         </div>
       </div>
    </main>
 
