@@ -173,19 +173,6 @@ footer {
    font-size: 1.9rem;
 }
 
-@keyframes appear {
-   0% {
-      opacity: 0;
-      transform: scale(0.7);
-   }
-}
-
-@keyframes move {
-   0% {
-      transform: translateY(var(--startY));
-   }
-}
-
 @media (min-width: 768px) and (max-width: 1439px) {
    body {
       width: 100%;
@@ -341,4 +328,17 @@ footer {
       margin-left: 0;
    }
    
+}
+
+@keyframes appear {
+   0% {
+      opacity: 0;
+      transform: scale(0.7);
+   }
+}
+
+@keyframes move {
+   0% {
+      transform: translateY(var(--startY));
+   }
 }
